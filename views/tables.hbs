@@ -1,0 +1,35 @@
+
+{{#each finaloutput}}
+	<h2>{{this.name}}</h2>
+	<table border="1">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>ID</th>
+			<th>Start Time</th>
+			<th>End Time </th>
+			<th>Channel</th>
+			<th>Start Time</th>
+			<th>End Time </th>
+			<th>Channel</th>
+			<th>Start Time</th>
+			<th>End Time </th>
+			<th>Channel</th>
+		</tr>
+	</thead>
+	{{#each tables}}
+		<tr><td> Table Name: {{this.name}}</td><td> Table id: {{this.id}} <br> </td>
+		<td> </td><td> </td><td> </td>
+		<td> </td><td> </td><td> </td>
+		<td> </td><td> </td><td> </td>
+		</tr>
+	{{/each}}
+	</table>
+	<p>
+{{/each}}
+
+
+ {{#each days}}
+ Day: {{this}}<br>
+ {{/each}}
+ </p>
